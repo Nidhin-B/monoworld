@@ -8,7 +8,9 @@
     "esModuleInterop": true,
     "allowImportingTsExtensions": true,
     "noEmit": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "types": ["vite/client", "node"]
   },
-  "include": ["src", "server"]
+  "include": ["src"]
 }
