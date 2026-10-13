@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#17251e" />
+    <title>MONOWORLD — Tiny Online RPG</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div class="brand"><span class="brand-mark">M</span><div><strong>MONOWORLD</strong><small>tiny worlds, good company</small></div></div>
+        <div id="connection" class="connection"><span class="dot"></span><span>Connecting…</span></div>
+      </header>
+      <main class="layout">
+        <section class="game-panel">
+          <div class="game-heading"><div><p class="eyebrow">THE FIRST LITTLE PLACE</p><h1>Mosslight Village</h1></div><div class="online-count"><span id="onlineCount">1</span> adventurers</div></div>
+          <div id="game"></div>
+          <div class="controls"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> or arrow keys to move</span><span class="tip">Find your friends around town.</span></div>
+        </section>
+        <aside class="side-panel">
+          <section class="card">
+            <p class="eyebrow">YOUR ADVENTURER</p>
+            <label for="playerName">Display name</label>
+            <div class="name-row"><input id="playerName" maxlength="16" value="Little Fern" /><button id="saveName">Set name</button></div>
+            <p class="muted">Names are for this prototype. Account saves come later.</p>
+          </section>
+          <section class="card chat-card">
+            <div class="chat-title"><div><p class="eyebrow">VILLAGE CHAT</p><h2>Say hello</h2></div><span class="chat-bubble">✳</span></div>
+            <div id="messages" class="messages" aria-live="polite"><p class="system-message">Welcome to Mosslight Village. Be nice to each other.</p></div>
+            <form id="chatForm" class="chat-form"><input id="chatInput" maxlength="180" placeholder="Type a message…" autocomplete="off" /><button type="submit" aria-label="Send message">↑</button></form>
+          </section>
+          <section class="card status-card"><p class="eyebrow">PROTOTYPE STATUS</p><div class="status-line"><span class="status-dot"></span>Movement + shared room</div><div class="status-line"><span class="status-dot pending"></span>Creatures, battles & trading — later</div></section>
+        </aside>
+      </main>
+      <footer>MONOWORLD is an original prototype. Not affiliated with Pokémon or Nintendo.</footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
