@@ -11,9 +11,9 @@
     "start:server": "tsx server/index.ts"
   },
   "dependencies": {
-  "@colyseus/schema": "^3.0.0",
-  "@colyseus/sdk": "^0.16.1",
-  "colyseus": "^0.16.5",
+  "@colyseus/schema": "^4.0.7",
+  "@colyseus/sdk": "^0.17.41",
+  "colyseus": "^0.17.10",
   "phaser": "^3.90.0"
   },
   "devDependencies": {
